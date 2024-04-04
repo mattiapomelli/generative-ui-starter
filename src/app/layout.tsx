@@ -2,10 +2,11 @@ import "./globals.css";
 import { Schibsted_Grotesk, Anybody } from "next/font/google";
 import { ReactNode } from "react";
 
+import { AI } from "@/app/action";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import Providers from "./providers";
+import { Providers } from "./providers";
 
 import type { Metadata } from "next";
 
@@ -51,7 +52,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           fontHeading.variable,
         )}
       >
-        <Providers>{children}</Providers>
+        <AI>
+          <Providers>{children}</Providers>
+        </AI>
       </body>
     </html>
   );

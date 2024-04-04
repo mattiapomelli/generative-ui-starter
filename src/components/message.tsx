@@ -1,6 +1,6 @@
 "use client";
 
-import { IconAI, IconUser } from "@/components/icons";
+import { IconAI, IconUser } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 
 // Different types of message bubbles.
